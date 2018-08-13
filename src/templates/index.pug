@@ -6,12 +6,51 @@ block variables
 	- var bodyclass = 'home'
 
 block body
-	section.home
+	section.home-slider 
 		.container
 			.row
 				.col
-					.jumbotron.text-center.mt-4
-						h1.hidden-md-up.display-4 Awesome Bootstrap Sites!
-						h2.hidden-md-up Dễ dàng triển khai và sử dụng
-						p.lead Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.
-
+					h1.h2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						br
+						| Eveniet consequatur beatae distinctio aliquid cu
+					p.mb-0
+						a.btn.btn-large.btn-cam(href="#") Click Here
+	section.home-services 
+		.container
+			.row
+				.col
+					.title-page.title-xanh
+						h2 Lorem ipsum dolor sit amet consect
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus excepturi repre
+			.row.mt-5
+				- for(x=1;x<5;x++)
+					.col-sm-6.col-md-3.mb-5
+						figure
+							img(src="./img/home_icon_"+x+".png", alt="", srcset="")
+						h3 Lorem ipsum dolor
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ea, 
+	section.home-teams 
+		.container
+			.row
+				.col
+					.title-page.title-xam
+						h2 Lorem ipsum dolor sit amet consect
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus excepturi repre
+			.row.mt-5
+				- for(x=1;x<5;x++)
+					.col-sm-6.col-md-3.mb-5.item
+						figure
+							img(src="./img/home_mem_1.png", alt="", srcset="")
+						h3 Lorem ipsum dolor
+						.pos SEO / ABC Company
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ea, 
+						ul.list-inline
+							li.list-inline-item 
+								a(href="#") 
+									i.fa.fa-facebook
+							li.list-inline-item 
+								a(href="#") 
+									i.fa.fa-twitter
+							li.list-inline-item 
+								a(href="#") 
+									i.fa.fa-google

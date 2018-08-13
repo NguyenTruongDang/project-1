@@ -4,4 +4,57 @@ html, body
 	font-size: 14px
 	height: 100%
 	width: 100%
+
+.btn-large
+	+pad(1rem 5rem 1.3rem 5rem)
+	+bor-rad(4px)
+	border: 0
+	text-transform: uppercase
+	color: $whites
+	&:hover, 
+	&:active
+		color: $whites
+	&.btn-cam
+		background: $warning
+		+box-sha(0 -4px 0px 0px darken($warning, 10%), inset)
+		&:hover, 
+		&:active
+			background: darken($warning, 3%)
+			+box-sha(0 -4px 0px 0px darken($warning, 15%), inset)
 	
+
+.title-page
+	h2 
+		text-transform: uppercase
+		letter-spacing: 1px 
+		position: relative
+		margin-bottom: 2rem
+		&:after 
+			+pos(abs,null null -.75rem 50%)
+			display: block
+			height: 3px 
+			width: 60px
+			content: ''
+			background: #000
+			+transform(translateX(-50%))
+	p 
+		+mar(0 auto)
+		max-width: 80%
+		+fz(1.2rem)
+	+media-breakpoint-up(md)
+		p 
+			max-width: 50%
+	&.title-xanh
+		h2 
+			&:after 
+				background: rgba(0,0,0,.3)
+		p 
+			+opacity(.8)
+	&.title-xam
+		h2 
+			color: darken($xam, 60%)
+			&:after 
+				background: darken($xam, 10%)
+		p 
+			color: darken($xam, 50%)
+
